@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+#include <cmath>
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+int x, y;
+
+cin >> x;
+	cout << "год";
+	switch (((x - 1984) % 60) / 12)
+	{
+	case 0: cout << "зеленой(ого) "; break;
+	case 1: cout << "красной(ого) "; break;
+	case 2: cout << "желтой(ого) "; break;
+	case 3: cout << "белой(ого) "; break;
+	case 4: cout << "черной(ого) "; break;
+	}
+	switch (((x - 1984) % 60) % 12)
+	{
+	case 0: cout << " курицы"; break;
+	case 1: cout << "собаки"; break;
+	case 2: cout << "свиньи"; break;
+	case 3: cout << "крысы"; break;
+	case 4: cout << " коровы"; break;
+	case 5: cout << " тигра"; break;
+	case 6: cout << " зайца"; break;
+	case 7: cout << "дракона"; break;
+	case 8: cout << " змеи"; break;
+	case 9: cout << " лошади"; break;
+	case 10: cout << " овцы"; break;
+	case 11: cout << " обезьяны"; break;
+	}
+
+}
